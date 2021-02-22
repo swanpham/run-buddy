@@ -3,23 +3,22 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>RUN BUDDY</title>
-  <link rel="stylesheet" href="C:\Users\Accounting\Desktop\assets\css\style.css" />
-  <!-- Add this to the page and see what happens! -->
-
+  <title>Run Buddy</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <!-- navigation -->
+  <!-- navigation -->
   <header>
-      <h1>
-
-        <a href="/">RUN BUDDY</a>
-      </h1>
-      <nav>
+    <h1>
+      <a href="/">
+        RUN BUDDY
+      </a>
+    </h1>
+    <nav>
       <!-- Unordered list element -->
       <ul>
-        <!-- List item element -->
+        <!-- List item element-->
         <li>
           <!-- Anchor element -->
           <a href="#what-we-do">What We Do</a>
@@ -28,10 +27,10 @@
           <a href="#what-you-do">What You Do</a>
         </li>
         <li>
-          <a href="#your-trainer">Your Trainers</a>
+          <a href="#your-trainers">Your Trainers</a>
         </li>
         <li>
-          <a href="#rech-out">Reach Out</a>
+          <a href="#reach-out">Reach Out</a>
         </li>
       </ul>
     </nav>
@@ -39,6 +38,35 @@
 
   <!-- hero/jumbotron -->
   <section>
+    <div>
+      <h3>Get Started Today</h3>
+      <p>Fill out this form and one of our trainers will schedule a consult</p>
+      <!-- Add form element -->  
+    <form>
+      <lable for="name">Enter full name:</lable>
+      <input type="text" placeholder="Your Name" Name="name" id="name" />
+      <lable for="email">Enter email address:</lable>
+      <input type="email" placeholder="Email Address" name="email" id="email" />
+      <lable for="phone">Enter a telephone number:</lable>
+      <input type="tel" placeholder="Phone Number" name="phone" id="phone" />
+      <p>
+        Have you worked out with a trainer before?
+        <input type="radio" name="trainer-confirm" id="trainer-yes" />
+        <lable for="trainer-yes">Yes</lable>
+        <input type="radio" name="trainer-confirm" id="trainer-no" />
+        <lable for="trainer-no">No</lable>
+      </p>
+      <p>
+        <lable for="checkbox">
+          I acknowledge that I am at least 18 uears of age.
+        </lable>
+        <input type="checkbox" name="age-confirm" id="checkbox" />
+      </p>
+      <button type="submit">
+        Get running!
+      </button>
+    </form>
+    </div>
   </section>
 
   <!-- "what we do" section -->
@@ -72,4 +100,3 @@
 </body>
 
 </html>
-
